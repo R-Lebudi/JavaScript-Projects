@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Area of circle</title>
+
+	<script>
+function doArea() {
+var radius = document.theform.rad.value;
+var result = (3.14 *radius*radius);
+alert("The area of circle is "+ result + " when radius is " + radius);
+
+}	
+	</script>
+</head>
+
+<body>
+
+<form name="theform">
+<h2>enter the radius of the circle</h2>
+RADIUS:<input type="text" name="rad" ><br>
+<h3>find the area of the below and give a tap now</h3>
+<input type="button" name="findarea" value="Area of Circle" onclick="doArea()">
+</form>
+
+</body>
+</html>

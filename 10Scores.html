@@ -1,0 +1,35 @@
+<!-- Write a javascript program that asks the user to enter up to 10 golf scores, which are to be stored in an array.
+You should provide a means for the user to terminate input prior to entering 10 scores. 
+The program should display all the scores on one line and report the average score.
+Handle input, display, and the average calculation with three seperate array processing functions. -->
+
+<html>
+<head>
+<title>10 Scores</title>
+
+	<script>
+function show_prompt(){
+	var scores = [];
+	var i = 0;
+	var sum = 0;
+do{
+	var number = prompt("Please enter 10 scores (press OK if done)");
+	
+	sum += parseInt(number);
+	
+	i++;
+	
+document.write("score: " + number);
+document.write("<br>");
+	}
+	
+while (i < 10)	
+
+document.write('Average of scores : ' + sum / i);
+
+}
+show_prompt();
+		
+	</script>
+</head>
+</html>
